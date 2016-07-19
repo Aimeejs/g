@@ -1,11 +1,10 @@
-var g, G, Class;
+/**
+ * G for Aimeejs
+ * Author by gavinning
+ * Homepage https://github.com/Aimeejs/g
+ */
 
-Class = require('class');
-G = Class.create();
-g = module.exports = new G;
-g.G = G;
-
-G.include({
+class G {
 
     /**
      * 为一组数据生成Map
@@ -25,7 +24,7 @@ G.include({
                 map[item[key]] = item;
         })
         return map;
-    },
+    }
 
     /**
      * Map => Array
@@ -42,7 +41,7 @@ G.include({
             array.push(fn(key, map[key]));
         }
         return array;
-    },
+    }
 
     /**
      * 获取一个Map的key的数组
@@ -55,7 +54,7 @@ G.include({
         return this.toArray(map, (key, value) => {
             return fn ? fn(key) : key;
         })
-    },
+    }
 
     /**
      * 获取一个Map的value的数组
@@ -69,4 +68,8 @@ G.include({
             return fn ? fn(value) : value;
         })
     }
-})
+}
+
+let g = new G;
+g.G = G;
+export default g;

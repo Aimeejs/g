@@ -1,6 +1,6 @@
 {
   "name": "g",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lib",
   "author": "gavinning",
   "keywords": "lib",
@@ -9,7 +9,5 @@
     "url": "https://github.com/aimeejs/g.git",
     "bugs": "https:/github.com/aimeejs/g/issues"
   },
-  "dependencies": {
-      "class": "^1.2.0"
-  }
+  "dependencies": {}
 }
