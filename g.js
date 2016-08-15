@@ -72,4 +72,4 @@ class G {
 
 let g = new G;
 g.G = G;
-export default g;
+module.exports = g['default'] = g;
